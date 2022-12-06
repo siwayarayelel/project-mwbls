@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="css/contact.css" />
+    
+    <script src="https://kit.fontawesome.com/1205ee9176.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+    <section class="announcement">
+        <h6>FREE DELIVERY IF YOU BUY 3 OR MORE DIFFERENT PRODUCTS !</h6>
+      </section>
+      <header>
+        <div class="topOfNav">
+            <div class="logoContainer">
+                <a class="logo" href="home.html"><img src="images/png/mwbls-low-resolution-logo-white-on-transparent-background.png"></a>g
+            </div>
+            <div class="navigation">
+              <input type="checkbox" class="toggle-menu">
+              <div class="hamburger"></div>
+              <!-- <nav> -->
+                  <ul class="menu">
+                      <li>
+                          <a href="home.html">HOME</a>
+                      </li>
+                      <li>
+                          <a href="store.html">STORE</a>
+                      </li>
+                      <li>
+                          <a href="sell.html">SELL</a>
+                      </li>
+                      <li>
+                          <a href="advocacy.html">ADVOCACY</a>              
+                      </li>
+                      <li>
+                          <a href="contact.html">CONTACT US</a>              
+                      </li>
+                  </ul>
+                  <li class="cart-li2"></li>
+              <!-- </nav> -->
+            </div>
+            <div class="rightside">
+                <div class="shopping-cartContainer shoppingCartButton">
+                  <span class="shopping-cart">
+                        <!--Shopping cart logo-->
+                        <span class="cartCounter"></span>
+                        <i class="fas fa-shopping-cart shoppingCartButton"></i>
+
+                  </span>
+                </div>
+                <span class="logoutContainer">
+                  <div class="profileContainer">
+                    <img class="profileIcon" alt="">
+                </div>
+                <div class="selectionContainer">
+                    <a href="profile.html"><p class="profileSelection hide">PROFILE</p></a>
+                    <a href="wishlist.html"><p class="profileSelection hide">WISHLIST</p></a>
+                    <a href="index.html"><p class="profileSelection hide">LOGOUT</p></a>
+                </div>
+                </span>
+            </div>
+        </div>
+  
+        <div class="productsOnCart hide">
+          <div class="overlay"></div>
+          <div class="top">
+              <button id="closeButton">
+                <i class="fa-regular fa-circle-xmark"></i>
+              </button>
+              <h3>Cart</h3>
+          </div>
+          <ul id="buyItems" class="buyItems">
+            <h2 class="cartIsEmpty"></h2>
+          </ul>
+          <div class="cartPrices">
+            <h5>SUBTOTAL: <span class="subTotalPrice"></span></h5>
+            <h5>DELIVERY FEE: <span class="deliveryFee"></span></h5>
+            <h4>TOTAL: <span class="totalPrice"></span></h4>
+          </div>
+          <a href="checkout.html" class="btn checkout">Check out</a>
+        </div>
+  
+    </header>
+
+  
+    <section>
+        <div class="wishContainer">
+    
+                <div class="container mt-5 mb-5  wishItems">
+                    <div class="wishTitle">
+                        <h1>WISHLIST</h1>
+                    </div>
+    
+                    <div class="d-flex justify-content-center row">
+                        <div class="col-md-10 wishCard">
+    
+    
+                                <div class="row p-2 mb-2 bg-white border rounded " id="item-container">
+    
+                                    <div class="col-md-3 mt-1"><img class="img-fluid  rounded product-image" src="images/Acacia Bowl.jpg"></div>
+    
+                                    <div class="col-md-6 mt-1">
+                                        <h5>Acacia Bowl</h5>
+                                        <div class="d-flex flex-row">
+                                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                        </div>
+                                                <div class="mt-1 mb-1 spec-1 pe-5"><span>Handmade by the Ifugao woodcarvers.
+                                                    This calabash style bowl is turned from a nicely figured piece of acaica wood that features some spalting and a bark inclusion that has been filled with epoxy resin. </span>
+                                                </div>
+                        
+                                        </div>
+    
+                                    <div class="align-items-center align-content-center col-md-3 border-left mt-1 wishPriceContainer">
+                                        <div class="d-flex flex-row align-items-center wishPrice">
+                                            <h4 class="mr-1 "><i class="fa-solid fa-peso-sign"></i>1000</h4><span class="strike-text"><i class="fa-solid fa-peso-sign"></i>2000</span>
+                                        </div>
+                                        <h6 class="text-success">Free shipping</h6>
+                                        <div class="d-flex flex-column mt-4"><button class="btn btn-wishlist-remove btn-sm" type="button" onclick="removeWishlist()"><i class="fa-solid fa-trash"></i>Remove</button><button class="btn btn-wishlist-add btn-sm mt-2" type="button">Add to Cart</button></div>
+                                    </div>
+    
+                                </div>
+                                
+                                <div class="row p-2 mb-2 bg-white border rounded " id="item-container1">
+    
+                                    <div class="col-md-3 mt-1"><img class="img-fluid  rounded product-image" src="images/Wooden Hand-painted Yoyo.jpg"></div>
+    
+                                    <div class="col-md-6 mt-1">
+                                        <h5>Wooden Hand-painted Yoyo</h5>
+                                        <div class="d-flex flex-row">
+                                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                        </div>
+                                                <div class="mt-1 mb-1 spec-1 pe-5"><span>Hand finished, solid wooden yoyo, perfect for birthdays, weddings, and as stocking fillers for Christmas. </span>
+                                                </div>
+                        
+                                        </div>
+    
+                                    <div class="align-items-center align-content-center col-md-3 border-left mt-1 wishPriceContainer">
+                                        <div class="d-flex flex-row align-items-center wishPrice">
+                                            <h4 class="mr-1 "><i class="fa-solid fa-peso-sign"></i>1000</h4><span class="strike-text"><i class="fa-solid fa-peso-sign"></i>2000</span>
+                                        </div>
+                                        <h6 class="text-success">Free shipping</h6>
+                                        <div class="d-flex flex-column mt-4"><button class="btn btn-wishlist-remove btn-sm" type="button" onclick="removeWishlist1()"><i class="fa-solid fa-trash"></i>Remove</button><button class="btn btn-wishlist-add btn-sm mt-2" type="button">Add to Cart</button></div>
+                                    </div>
+                                    
+                                </div>
+    
+                                <div class="row p-2 mb-2 bg-white border rounded " id="item-container2">
+    
+                                    <div class="col-md-3 mt-1"><img class="img-fluid  rounded product-image" src="images/Santa Christmas Wreath.jpg"></div>
+    
+                                    <div class="col-md-6 mt-1">
+                                        <h5>SANTA CHRISTMAS WREATH</h5>
+                                        <div class="d-flex flex-row">
+                                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                        </div>
+                                                <div class="mt-1 mb-1 spec-1 pe-5"><span>Perfect for the Holidays,  400cm tall handcrafted Santa made from bamboo. </span>
+                                                </div>
+                        
+                                        </div>
+    
+                                    <div class="align-items-center align-content-center col-md-3 border-left mt-1 wishPriceContainer">
+                                        <div class="d-flex flex-row align-items-center wishPrice">
+                                            <h4 class="mr-1 "><i class="fa-solid fa-peso-sign"></i>1000</h4><span class="strike-text"><i class="fa-solid fa-peso-sign"></i>2000</span>
+                                        </div>
+                                        <h6 class="text-success">Free shipping</h6>
+                                        <div class="d-flex flex-column mt-4"><button class="btn btn-wishlist-remove btn-sm" type="button" onclick="removeWishlist2()"><i class="fa-solid fa-trash"></i>Remove</button><button class="btn btn-wishlist-add btn-sm mt-2" type="button">Add to Cart</button></div>
+                                    </div>
+                                    
+                                </div>
+    
+                                <div class="row p-2 mb-2 bg-white border rounded " id="item-container3">
+    
+                                    <div class="col-md-3 mt-1"><img class="img-fluid  rounded product-image" src="images/Kamagong Spoon and Fork.jpg"></div>
+    
+                                    <div class="col-md-6 mt-1">
+                                        <h5>Acacia Bowl</h5>
+                                        <div class="d-flex flex-row">
+                                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                        </div>
+                                                <div class="mt-1 mb-1 spec-1 pe-5"><span>Handmade by the Ifugao woodcarvers.
+                                                    This calabash style bowl is turned from a nicely figured piece of acaica wood that features some spalting and a bark inclusion that has been filled with epoxy resin. </span>
+                                                </div>
+                        
+                                        </div>
+    
+                                    <div class="align-items-center align-content-center col-md-3 border-left mt-1 wishPriceContainer">
+                                        <div class="d-flex flex-row align-items-center wishPrice">
+                                            <h4 class="mr-1 "><i class="fa-solid fa-peso-sign"></i>1000</h4><span class="strike-text"><i class="fa-solid fa-peso-sign"></i>2000</span>
+                                        </div>
+                                        <h6 class="text-success">Free shipping</h6>
+                                        <div class="d-flex flex-column mt-4"><button class="btn btn-wishlist-remove btn-sm" type="button" onclick="removeWishlist3()"><i class="fa-solid fa-trash"></i>Remove</button><button class="btn btn-wishlist-add btn-sm mt-2" type="button">Add to Cart</button></div>
+                                    </div>
+                                    
+                                </div>
+    
+    
+                            
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+      <footer>
+        <div class="newsletter">
+            <h1>Newsletter</h1>
+            <h6>Want to get updates for our new products ? </h6>
+     
+            <div>
+                <form action="" onsubmit="return false">
+                  <input type="email" placeholder="Enter your email here" id="newsletter-email" required>
+                  <button type="submit" class="newsLetterBtn"><i class="fa-solid fa-caret-right"></i></button>
+                </form>
+            </div>
+      
+        </div>
+        <div class="footer">
+            <div class="footer-products">
+                    <h2>Products</h2>
+                    <ul>
+                        <a href="store.html"><li>Chairs</li></a>
+                        <a href="store.html"><li>Tables</li></a>
+                        <a href="store.html"><li>Beds</li></a>
+                        <a href="store.html"><li>Toys</li></a>
+                        <a href="store.html"><li>Kitchen</li></a>
+                        <a href="store.html"><li>Decors</li></a>
+                        <a href="store.html"><li>Storage</li></a>
+                    </ul>
+            </div>
+            <div class="useful-links">
+                <h2>Useful Links</h2>
+                <ul>
+                    <a href="home.html"><li>Home</li></a>
+                    <a href="store.html"><li>Store</li></a>
+                    <a href="sell.html"><li>Sell</li></a>
+                    <a href="advocacy.html"><li>Advocacy</li></a>
+                    <a href="contactus.html"><li>Contact Us</li></a>
+                </ul>
+            </div>
+            <div class="contacts">
+                <h2>Contacts</h2>
+                <div>
+                    <i class="fa-solid fa-location-dot"></i><span>2183 Magsaysay Avenue Corner EDSA, Guadalupe Nuevo</span> 
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i></i><span>(032) 261 2345</span> 
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i><span>mwbls@help.com</span>
+                </div>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+  
+
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"
+      ></script>
+
+      <script src="js/wishList.js"></script>
+     
+</body>
+</html>

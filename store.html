@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STORE</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/1205ee9176.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="announcement">
+      <h6>FREE DELIVERY IF YOU BUY 3 OR MORE DIFFERENT PRODUCTS !</h6>
+    </section>
+    <header>
+      <div class="topOfNav">
+          <div class="logoContainer">
+            <a class="logo" href="home.html"><img src="images/png/mwbls-low-resolution-logo-white-on-transparent-background.png"></a>
+          </div>
+          <div class="navigation">
+            <input type="checkbox" class="toggle-menu">
+            <div class="hamburger"></div>
+                <ul class="menu">
+                    <li>
+                        <a href="home.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="store.html">STORE</a>
+                    </li>
+                    <li>
+                        <a href="sell.html">SELL</a>
+                    </li>
+                    <li>
+                      <a href="advocacy.html">ADVOCACY</a>              
+                  </li>
+                    <li>
+                        <a href="contact.html">CONTACT US</a>              
+                    </li>
+                </ul>
+          </div>
+          <div class="rightside">
+              <div class="shopping-cartContainer shoppingCartButton">
+                <span class="shopping-cart">
+                      <span class="cartCounter"></span>
+                      <i class="fas fa-shopping-cart shoppingCartButton"></i>
+                </span>
+              </div>
+              <span class="logoutContainer">
+                <div class="profileContainer">
+                  <img class="profileIcon" alt="">
+                </div>
+                <div class="selectionContainer">
+                  <a href="profile.html"><p class="profileSelection hide">PROFILE</p></a>
+                  <a href="wishlist.html"><p class="profileSelection hide">WISHLIST</p></a>
+                  <a href="index.html"><p class="profileSelection hide">LOGOUT</p></a>
+                </div>
+              </span>
+          </div>
+      </div>
+
+      <div class="productsOnCart hide">
+        <div class="overlay"></div>
+        <div class="top">
+            <button id="closeButton">
+              <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+            <h3>Cart</h3>
+        </div>
+        <ul id="buyItems" class="buyItems">
+          <h2 class="cartIsEmpty"></h2>
+        </ul>
+        <div class="cartPrices">
+          <h5 class="subTotalH5">SUBTOTAL: <span class="subTotalPrice"></span></h5>
+          <h5>DELIVERY FEE: <span class="deliveryFee"></span></h5>
+          <h4>TOTAL: <span class="totalPrice"></span></h4>
+        </div>
+        <a href="checkout.html" class="btn checkout">Check out</a>
+      </div>
+
+  </header>
+
+    <section class="search-section">
+      <div class="search-container">
+        <div id="search-container">
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Search product name here.."> 
+            <label for="search-input">
+              <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </label>
+        </div>
+      </div>
+   
+
+      <div class="filterAndProducts">
+          <div class="filterSection">
+            <div id="filterByLocation">
+              <input type="search" placeholder="Search by location" id="searchLocation">
+            </div>
+            <div id="filterByCategory">
+              <button class="button-value main">
+                Filter By Category <div class="filterCategory"><i class="fa-solid fa-sort-up"></i></div> 
+              </button>
+              <div class="button-value sub hide">
+                <input type="checkbox" class="checkboxAll" id="all" value="all" name="checkboxCategory1" oninput="filterCondtn1(event)" checked>
+                <label for="all">All </label>
+              </div>
+              <div class="button-value sub hide">
+                <input type="checkbox" class="checkboxCategory" id="Chairs" value="Chairs" name="checkboxCategory" oninput="filterCondtn1(event)">
+                <label for="Chairs">Chairs</label>
+              </div>
+              <div class="button-value sub hide">
+                <input type="checkbox" class="checkboxCategory" id="Tables" value="Tables" name="checkboxCategory" oninput="filterCondtn1(event)">
+                <label for="Tables">Tables</label>
+              </div>
+              <div class="button-value sub hide">
+                <input type="checkbox" class="checkboxCategory" id="Beds" value="Beds" name="checkboxCategory" oninput="filterCondtn1(event)">
+                <label for="Beds">Beds</label>
+              </div>
+              <div class="button-value sub hide">
+                <input type="checkbox" class="checkboxCategory" id="Toys" value="Toys" name="checkboxCategory" oninput="filterCondtn1(event)">
+                <label for="Toys">Toys</label>
+              </div>
+              <div class="button-value sub hide">
+                <input type="checkbox" class="checkboxCategory" id="Kitchen" value="Kitchen" name="checkboxCategory" oninput="filterCondtn1(event)">
+                <label for="Kitchen">Kitchen</label>
+              </div>
+              <div class="button-value sub hide">
+                <input type="checkbox" class="checkboxCategory" id="Decors" value="Decors" name="checkboxCategory" oninput="filterCondtn1(event)">
+                <label for="Decors">Decors</label>
+              </div>
+              <div class="button-value sub hide">
+                <input type="checkbox" class="checkboxCategory" id="Storage" value="Storage" name="checkboxCategory" oninput="filterCondtn1(event)">
+                <label for="Storage">Storage</label>
+              </div>
+            
+            </div>
+            <div id="filterByPrice">
+              <button class="button-value main mainPrice">
+                Filter By Price <div class="filterPrice"><i class="fa-solid fa-sort-up"></i></div> 
+              </button>
+              <button class="button-value subPrice hide" onclick="filterByPriceBtn('Default')">
+                Default
+              </button>
+              <button class="button-value subPrice hide lowToHigh" onclick="filterByPriceBtn('Low to High')">
+                Low to High
+              </button>
+              <button class="button-value subPrice hide"  onclick="filterByPriceBtn('High to Low')">
+                High to Low
+              </button>
+            </div>
+      
+     
+          </div>
+          <div id="products"></div>
+      </div>
+       
+     
+    </section>
+    <footer>
+      <div class="newsletter">
+          <h1>Newsletter</h1>
+          <h6>Want to get updates for our new products ? </h6>
+   
+          <div class="newsletterFormContainer">
+              <form action="" onsubmit="return false">
+                <input type="email" placeholder="Enter your email here" id="newsletter-email" required>
+                <button type="submit" class="newsLetterBtn"><i class="fa-solid fa-caret-right"></i></button>
+              </form>
+          </div>
+    
+      </div>
+      <div class="footer">
+          <div class="footer-products">
+                  <h2>Products</h2>
+                  <ul>
+                    <a href="store.html"><li>Chairs</li></a>
+                    <a href="store.html"><li>Tables</li></a>
+                    <a href="store.html"><li>Beds</li></a>
+                    <a href="store.html"><li>Toys</li></a>
+                    <a href="store.html"><li>Kitchen</li></a>
+                    <a href="store.html"><li>Decors</li></a>
+                    <a href="store.html"><li>Storage</li></a>
+                </ul>
+          </div>
+          <div class="useful-links">
+              <h2>Useful Links</h2>
+              <ul>
+                  <a href="home.html"><li>Home</li></a>
+                  <a href="store.html"><li>Store</li></a>
+                  <a href="sell.html"><li>Sell</li></a>
+                  <a href="advocacy.html"><li>Advocacy</li></a>
+                  <a href="contactus.html"><li>Contact Us</li></a>
+              </ul>
+          </div>
+          <div class="contacts">
+              <h2>Contacts</h2>
+              <div>
+                  <i class="fa-solid fa-location-dot"></i><span>2183 Magsaysay Avenue Corner EDSA, Guadalupe Nuevo</span> 
+              </div>
+              <div>
+                  <i class="fa-solid fa-phone"></i></i><span>(032) 261 2345</span> 
+              </div>
+              <div>
+                  <i class="fa-solid fa-envelope"></i><span>mwbls@help.com</span>
+              </div>
+              <div>
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+      </div>
+  </footer>
+
+    <!-- Script -->
+    <!-- <script src="js/shopping-cart.js"></script> -->
+    <script src="js/store.js"></script>
+   
+    <!-- <script src="js/shopping-cart.js"></script> -->
+  </body>
+</html>

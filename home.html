@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://kit.fontawesome.com/1205ee9176.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="announcement">
+        <h6>FREE DELIVERY IF YOU BUY 3 OR MORE DIFFERENT PRODUCTS !</h6>
+      </section>
+      <header>
+        <div class="topOfNav">
+            <div class="logoContainer">
+                <a class="logo" href="home.html"><img src="images/png/mwbls-low-resolution-logo-white-on-transparent-background.png"></a>
+            </div>
+            <div class="navigation">
+              <input type="checkbox" class="toggle-menu">
+              <div class="hamburger"></div>
+                  <ul class="menu">
+                        <li>
+                            <a href="home.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="store.html">STORE</a>
+                        </li>
+                        <li>
+                            <a href="sell.html">SELL</a>
+                        </li>
+                        <li>
+                            <a href="advocacy.html">ADVOCACY</a>              
+                        </li>
+                        <li>
+                            <a href="contact.html">CONTACT US</a>              
+                        </li>
+                  </ul>
+            </div>
+            <div class="rightside">
+                <div class="shopping-cartContainer shoppingCartButton">
+                  <span class="shopping-cart">
+                        <span class="cartCounter"></span>
+                        <i class="fas fa-shopping-cart shoppingCartButton"></i>
+                  </span>
+                </div>
+                <span class="logoutContainer">
+                  <div class="profileContainer">
+                    <img class="profileIcon" alt="">
+                </div>
+                <div class="selectionContainer">
+                    <a href="profile.html"><p class="profileSelection hide">PROFILE</p></a>
+                    <a href="wishlist.html"><p class="profileSelection hide">WISHLIST</p></a>
+                    <a href="index.html"><p class="profileSelection hide">LOGOUT</p></a>
+                </div>
+                </span>
+            </div>
+        </div>
+  
+        <div class="productsOnCart hide">
+          <div class="overlay"></div>
+          <div class="top">
+              <button id="closeButton">
+                <i class="fa-regular fa-circle-xmark"></i>
+              </button>
+              <h3>Cart</h3>
+          </div>
+          <ul id="buyItems" class="buyItems">
+            <h2 class="cartIsEmpty"></h2>
+          </ul>
+          <div class="cartPrices">
+            <h5 class="subTotalH5">SUBTOTAL: <span class="subTotalPrice"></span></h5>
+            <h5>DELIVERY FEE: <span class="deliveryFee"></span></h5>
+            <h4>TOTAL: <span class="totalPrice"></span></h4>
+          </div>
+          <a href="checkout.html" class="btn checkout">Check out</a>
+        </div>
+  
+    </header>
+
+    <section class="carouselSection">
+        <div class="carouselSubSection">
+            <div class="carouselMainContainer">
+                <div class="carouselContainer">
+                    <h1>BUY LOCAL</h1>
+                    <h2>BUY FILIPINO-MADE PRODUCTS !</h2>
+                    <a href="store.html"><button>SHOP NOW</button></a>
+                </div>
+                <div class="carouselContainer2">
+                    <h1>MAKE YOUR CRAFTWORK BE KNOWN</h1>
+                    <h2>LIST YOUR OWN PRODUCT !</h2>
+                    <a href="sell.html"><button>SELL NOW</button></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="carouselPageBtns">
+            <buttons class="carouselPrev"><i class="fa-solid fa-chevron-left"></i></buttons>
+            <buttons class="carouselNext"><i class="fa-solid fa-chevron-right"></i></buttons>
+        </div>
+
+    </section>
+
+
+    
+    <section class="holidaySection">
+        <img src="images/holidaybanner.jpg" alt="holidaybanner">
+        <a href="store.html">SHOP CHRISTMAS COLLECTION</a>
+      
+
+    </section>
+
+    <seciton class="featuredSection"> 
+        <div class="featuredMainContainer">
+            <h1>FEATURED PRODUCTS</h1>
+            <div class="featuredContainer">
+                <div class="featuredCardContainer">
+            
+                    <div class="featuredCard">
+                        <div class="featuredDetails">
+                            <h1>Acacia Bowl</h1>
+                            <p>Handmade by the Ifugao woodcarvers.
+                                This calabash style bowl is turned from a nicely figured piece of acaica wood that features some spalting and a bark inclusion that has been filled with epoxy resin. </p>
+                            <a href="store.html"><button>SHOP NOW</button></a>
+                        </div>
+                        <div class="featuredImg">
+                            <img src="images/Acacia Bowl.jpg" alt="gmelinabed">
+                        </div>
+                    </div>
+                    <div class="featuredCard">
+                        <div class="featuredDetails">
+                            <h1>Wooden Hand-painted Yoyo</h1>
+                            <p>Hand finished, solid wooden yoyo, perfect for birthdays, weddings, and as stocking fillers for Christmas.</p>
+                            <a href="store.html"><button>SHOP NOW</button></a>
+                        </div>
+                        <div class="featuredImg">
+                            <img src="images/Wooden Hand-painted Yoyo.jpg" alt="gmelinabed">
+                        </div>
+                    </div>
+                    <div class="featuredCard">
+                        <div class="featuredDetails">
+                            <h1>Narra Rounded Table</h1>
+                            <p>Hand finished rounded wood table from Paete Laguna, carefully selected  wood plates and crafted as a table.</p>
+                            <a href="store.html"><button>SHOP NOW</button></a>
+                        </div>
+                        <div class="featuredImg">
+                            <img src="images/Narra Rounded Table.jpg" alt="gmelinabed">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="featuredPageBtns">
+                <button class="prevButton">PREV</button>
+                <button class="nextButton">NEXT</button>
+            </div>
+        </div>
+
+    </seciton>
+
+ 
+
+    <section class="bestSellerSection">
+        <h1>BEST SELLER</h1>
+        <div class="bestSellerContainer">
+            <div >
+                <img src="images/Acacia Bowl.jpg"  alt="acaciabowl">
+                <a href="store.html"><button>SHOP NOW</button></a>
+            </div>
+            <div >
+                <img src="images/Acacia Chopping Board.jpg"  alt="acaciachoppingboard">
+                <a href="store.html"><button>SHOP NOW</button></a>
+            </div>
+            <div > 
+                <img src="images/Narra Queen Size Bed.jpg"  alt="narraqueenbed">
+                <a href="store.html"><button>SHOP NOW</button></a>
+            </div>
+            <div >
+                <img src="images/Narra Rocking Chair.jpg"  alt="narrachair">
+                <a href="store.html"><button>SHOP NOW</button></a>
+            </div>
+            <div>
+                <img src="images/Acacia Rice Bowl with Glass Cover.jpg" alt="acaciabowl">
+                <a href="store.html"><button>SHOP NOW</button></a>
+            </div>
+            <div>
+                <img src="images/Gmelina Bed with drawer.jpg" alt="acaciachoppingboard">
+                <a href="store.html"><button>SHOP NOW</button></a>
+            </div>
+            <div>
+                <img src="images/Kamagong Spoon and Fork.jpg" alt="narraqueenbed">
+                <a href="store.html"><button>SHOP NOW</button></a>
+            </div>
+            <div>
+                <img src="images/Narra 8 seater Dining Table.jpg" alt="narrachair">
+                <a href="store.html"><button>SHOP NOW</button></a>
+            </div>
+            
+        </div >
+
+    </section> 
+
+    <footer>
+        <div class="newsletter">
+            <h1>Newsletter</h1>
+            <h6>Want to get updates for our new products ? </h6>
+            <div>
+                <form action="">
+                  <input type="email" placeholder="Enter your email here" id="newsletter-email" required>
+                  <button type="reset" class="newsLetterBtn"><i class="fa-solid fa-caret-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-products">
+                    <h2>Products</h2>
+                    <ul>
+                        <a href="store.html"><li>Chairs</li></a>
+                        <a href="store.html"><li>Tables</li></a>
+                        <a href="store.html"><li>Beds</li></a>
+                        <a href="store.html"><li>Toys</li></a>
+                        <a href="store.html"><li>Kitchen</li></a>
+                        <a href="store.html"><li>Decors</li></a>
+                        <a href="store.html"><li>Storage</li></a>
+                    </ul>
+            </div>
+            <div class="useful-links">
+                <h2>Useful Links</h2>
+                <ul>
+                    <a href="home.html"><li>Home</li></a>
+                    <a href="store.html"><li>Store</li></a>
+                    <a href="sell.html"><li>Sell</li></a>
+                    <a href="advocacy.html"><li>Advocacy</li></a>
+                    <a href="contactus.html"><li>Contact Us</li></a>
+                </ul>
+            </div>
+            <div class="contacts">
+                <h2>Contacts</h2>
+                <div>
+                    <i class="fa-solid fa-location-dot"></i><span>2183 Magsaysay Avenue Corner EDSA, Guadalupe Nuevo</span> 
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i></i><span>(032) 261 2345</span> 
+                </div>
+                <div>
+                    <a href="mailto:mwbls@help.com"><i class="fa-solid fa-envelope"></a></i><span>mwbls@help.com</span>
+                </div>
+                <div>
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/home.js"></script>
+</body>
+</html>
